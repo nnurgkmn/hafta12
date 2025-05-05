@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>FB vs GS </h1>
+<button onclick="bahisOyna()">Bahis Oyna</button>
+
+<h2 id="sonuc"></h2>
+
+<img id="myImage" src="https://media.tenor.com/UfgbDZAGsJ0AAAAM/money-money-money.gif" style="width:100px">
+
+
+<script>
+function bahisOyna() {
+  var rnd = Math.floor(Math.random() * 11); 
+  if (rnd > 7) {
+    document.getElementById('sonuc').textContent = "GS Kazandı!";
+    document.getElementById('myImage').src = "https://yt3.googleusercontent.com/Js3-IqMFlaRuEIF9_zBEh1Tv-NWsjb1-gEnbmcLchAdunyssDC2mguOpvxQJ62CIwIkjvx0--0k=s900-c-k-c0x00ffffff-no-rj";
+  } else if (rnd < 4){
+    document.getElementById('sonuc').textContent = "FB Kazandı!";
+    document.getElementById('myImage').src = "https://upload.wikimedia.org/wikipedia/tr/thumb/8/86/Fenerbah%C3%A7e_SK.png/250px-Fenerbah%C3%A7e_SK.png";
+  } else {
+    document.getElementById('sonuc').textContent = "Beraberlik!";
+    document.getElementById('myImage').src = "https://pbs.twimg.com/profile_images/529657776533172225/GYBuWBBk_400x400.jpeg";
+  }
+}
+</script>
+</body>
+</html>
